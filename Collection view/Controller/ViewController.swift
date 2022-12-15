@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        //collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
     }
 }
@@ -33,12 +33,12 @@ extension ViewController: UICollectionViewDataSource{
         return cell
     }
 }
-
-extension ViewController: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 300)
-    }
-}
+//
+//extension ViewController: UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: 200, height: 300)
+//    }
+//}
 
 extension ViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
